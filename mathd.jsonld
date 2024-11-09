@@ -1,0 +1,77 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "mathd"
+    },
+    "motivations": {
+      "@value": "I am motivated by a deep belief in Cardano’s vision for decentralization and its potential to transform the future of finance. Since joining the ecosystem in 2021, I have been inspired by its commitment to innovation and sustainability. Serving as a DRep is an opportunity for me to contribute meaningfully to the platform’s governance, ensuring that decisions are made with foresight, transparency, and a focus on long-term impact."
+    },
+    "objectives": {
+      "@value": "As a Cardano DRep, my objective is to foster innovation, build long-term trust in the platform, and help secure the future of money. I aim to make informed and transparent governance decisions that align with the principles of decentralization and sustainability, ensuring the continued growth and resilience of the ecosystem."
+    },
+    "paymentAddress": {
+      "@value": "addr1q9tpljugfglhdv05rtfxrfq0tzddpp9v8mwjrqnhenjpjm0japmp40enuvz3pqh254uaqwmz9t0tex7f8ysyf6fjr86qrqm7k4"
+    },
+    "qualifications": {
+      "@value": "I bring extensive experience as a software enthusiast, AI expert, and tech enthusiast to the role of DRep. My active involvement in the Cardano ecosystem since 2021 has provided me with valuable insights into its governance and community-driven processes. Combined with my technical expertise, I am well-equipped to analyze complex proposals and contribute to the ecosystem’s development with a balanced, informed approach."
+    },
+    "references": []
+  }
+}
